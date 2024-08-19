@@ -1,0 +1,20 @@
+name: Docker
+
+on:
+  push:
+    paths-ignore:
+      - "**.md"
+      - "**/.gitignore"
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  traefik:
+    uses: thesilkky/workflows/.github/workflows/docker-build-push.yml@main
+    with:
+      image: thesilkky/traefik
+      image-version: 3.1.2
+      context: .
+      build-args: TRAEFIK_VERSION=3.1.2
+      platforms: linux/amd64,linux/arm64
+      dockerhub: false
