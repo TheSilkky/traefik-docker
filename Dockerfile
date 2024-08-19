@@ -39,5 +39,4 @@ STOPSIGNAL SIGTERM
 LABEL org.opencontainers.image.title="Traefik"
 LABEL org.opencontainers.image.description="A modern reverse-proxy"
 LABEL org.opencontainers.image.version="v${TRAEFIK_VERSION}"
-LABEL org.opencontainers.image.source="https://github.com/traefik/traefik.git"
-LABEL org.opencontainers.image.licenses="MIT"
+LABEL org.opencontainers.image.source="https://github.com/TheSilkky/traefik-docker.git"
