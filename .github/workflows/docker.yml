@@ -13,8 +13,8 @@ jobs:
     uses: thesilkky/workflows/.github/workflows/docker-build-push.yml@main
     with:
       image: thesilkky/traefik
-      image-version: 3.1.3
+      image-version: 3.1.4
       context: .
-      build-args: TRAEFIK_VERSION=3.1.3
+      build-args: TRAEFIK_VERSION=3.1.4
       platforms: linux/amd64,linux/arm64
       dockerhub: false
